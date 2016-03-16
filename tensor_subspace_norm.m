@@ -165,10 +165,6 @@ for kk = 1:opt.maxiter
     end
 end
 
-if opt.verbose
-    fprintf('[iter %d] fval=%g gap = %g viol=%s eta=%g\n', kk, fval(kk), gap(kk), printvec(viol), eta);
-end
-
 
 X=zeros(sz);
 for jj=1:nd
